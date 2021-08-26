@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .contact, .exp{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.contact .contact-content,
+.exp .exp-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.home{
+    display: flex;
+    background: url("cool-background.png") no-repeat center;
+    color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+.about{
+    background: url("cool-background.png") no-repeat center;
+    color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content .left{
+    width: 50%;
+}
+.about .about-content .left img{
+    height: 308.4px;
+    width: 308.4px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: 100px;
+}
+.about .about-content .right{
+    width: 50%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.contact{
+    color: #fff;
+    background: url("cool-background.png") no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+    color: crimson;
+}
+.contact .contact-content .info .sub-title{
+    color: #fff;
+}
+
+.contact .right .fields{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact .right .fields a i{
+    margin-left: 20px;
+}
+
+.switch {
+    position: relative;
+    top: 0.05rem;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+  
+.slider.round {
+    border-radius: 17px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.background {
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 0;
+}
+
+.exp{
+    color: #fff;
+    background: url("cool-background.png") no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.exp .title::after{
+    content: "what i do";
+}
+.exp .exp-content .card{
+    width: calc(33% - 20px);
+    background: rgb(14, 17, 29);
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.exp .exp-content .card:hover{
+    background: crimson;
+}
+.exp .exp-content .card .box{
+    transition: all 0.3s ease;
+}
+.exp .exp-content .card:hover .box{
+    transform: scale(1.05);
+}
+.exp .exp-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.exp .exp-content .card:hover i{
+    color: #fff;
+}
+.exp .exp-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .exp .exp-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .navbar .logo a{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .exp .exp-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .navbar .logo a{
+        display: none;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 400px){
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 5px 0;
+        margin-left: 8px;
+        font-size: 16px;
+    }
+    .about .about-content .left img{
+        height: 290px;
+        width: 290px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+    .about .about-content .right{
+        text-align:center
+    }
+    .about .about-content .right p{
+        text-align:center
+    }
+    .about{
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+    .contact{
+        padding-top: 90px;
+    }
+    .exp{
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .contact .right .fields{
+        padding: 0 10%;
+    }
+}
+
