@@ -304,9 +304,9 @@ input:checked + .slider:before {
 }
 .exp .exp-content .card{
     width: calc(33% - 20px);
-    background: #283048; 
-    background: -webkit-linear-gradient(to left, #283048, #859398);  
-    background: linear-gradient(to left, #283048, #859398);
+    background: #232526;  
+    background: -webkit-linear-gradient(to left, #232526, #414345);  
+    background: linear-gradient(to left, #232526, #414345); 
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -314,7 +314,7 @@ input:checked + .slider:before {
     transition: all 0.3s ease;
 }
 .exp .exp-content .card:hover{
-    background: crimson;
+    background: #d84964;
 }
 .exp .exp-content .card .box{
     transition: all 0.3s ease;
