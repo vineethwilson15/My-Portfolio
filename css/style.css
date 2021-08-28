@@ -304,7 +304,7 @@ input:checked + .slider:before {
 }
 .exp .exp-content .card{
     width: calc(33% - 20px);
-    background: rgb(14, 17, 29);
+    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
